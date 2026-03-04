@@ -1,0 +1,30 @@
+{
+  "name": "wikidata",
+  "version": "1.0.0",
+  "description": "Script to get Wiki Data and index it in the Azure AI Search",
+  "engines": {
+    "node": "22 || 24"
+  },
+  "main": "./out/src/setup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "indexer:create": "npm run build && env-cmd --silent -f ./.env node ./out/src/setup.js",
+    "indexer:delete": "npm run build && env-cmd --silent -f ./.env node ./out/src/delete.js"
+  },
+  "keywords": [],
+  "author": "Sankarshana Hooli",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@azure/search-documents": "^12.0.0",
+    "@langchain/textsplitters": "^1.0.1",
+    "openai": "^6.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "env-cmd": "^10.1.0",
+    "ts-node": "^10.4.0",
+    "typescript": "~5.8.3"
+  }
+}
