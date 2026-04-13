@@ -1,6 +1,6 @@
 # Extract wiki Data
 
-The script requires Node version 22 or higher. And it complements the [Teams Chatbot Repo](exarvo/teams-chat-bot) as a complete solution.
+The script requires Node version 22 or higher. And it complements the [Teams Chatbot Repo](/exarvo/teams-chat-bot) as a complete solution.
 
 
 This is written in Typescript and thus you need to build the script. The Build files will be generated in "out/" directory.
