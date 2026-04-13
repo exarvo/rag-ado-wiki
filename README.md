@@ -1,12 +1,17 @@
 # Extract wiki Data
 
-The script requires Node version 22 or higher.
+The script requires Node version 22 or higher. And it complements the [Teams Chatbot Repo](exarvo/teams-chat-bot) as a complete solution.
+
 
 This is written in Typescript and thus you need to build the script. The Build files will be generated in "out/" directory.
 
 **.env** file needs to be created if you are trying to run this script locally.
 
 All of the variables are given in **.env.example** that needs to be defined.
+
+## Architecture Diagram
+
+![RAG Pipeline and Storage in Azure AI Search](rag-store.svg)
 
 ## How to set up and run the script
 
